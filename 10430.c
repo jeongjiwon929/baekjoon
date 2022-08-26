@@ -1,13 +1,11 @@
 #include<stdio.h>
 int main() {
-
-	int A, B, C;
-	scanf_s("%d %d %d", &A, &B, &C);
-	printf("%d\n", (A + B) % C);
-	printf("%d\n", ((A % C + B % C)) % C);
-	printf("%d\n", (A * B) % C);
-	printf("%d\n", ((A % B * B % C)) % C);
-
-
-	return 0;
+    int a,b,c;
+    
+    scanf("%d %d %d", &a, &b, &c);
+    printf("%d\n", (a+b)%c);
+    printf("%d\n", ((a%c)+(b%c))%c);
+    printf("%d\n", (a*b)%c);
+    printf("%d", ((a%c)*(b%c))%c);
+    return 0;
 }
